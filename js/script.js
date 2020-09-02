@@ -1,9 +1,6 @@
-var argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput, buttonK, buttonP, buttonN;
-
-
-buttonK = document.getElementById("buttonK");
-buttonP = document.getElementById("buttonP");
-buttonN = document.getElementById("buttonN");
+const buttonK = document.getElementById("buttonK");
+const buttonP = document.getElementById("buttonP");
+const buttonN = document.getElementById("buttonN");
 
 function buttonClicked(argButtonName){
 	clearMessages();
@@ -37,7 +34,8 @@ function buttonClicked(argButtonName){
 	  }
 	  printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
 	}
-
+	
+	let computerMove, playerMove, randomNumber, playerInput;
 	playerMove = argButtonName;
 	console.log('ruch gracza to: ' + playerMove);
 	randomNumber = Math.floor(Math.random() * 3 + 1);
